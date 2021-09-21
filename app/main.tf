@@ -1,11 +1,3 @@
-provider "azurerm" {
-  version = "=1.39.0"
-}
-terraform {
-    backend "azurerm" {
-    }
-}
-
 module "rg" {
     source = "./rg"
     location = var.location
